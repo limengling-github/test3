@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>慕课网</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript"> 
+         var curIndex = 0; 
+         var timeInterval = 1000; 
+         var arr = new Array(); 
+         arr[0] = "images/ad1.jpg"; 
+         arr[1] = "images/ad2.jpg"; 
+         arr[2] = "images/ad3.jpg";  
+         setInterval(changeImg,timeInterval); 
+         function changeImg() { 
+         var obj = document.getElementById("image"); 
+         if (curIndex == arr.length-1) { 
+            curIndex = 0; 
+             } 
+        else { 
+            curIndex += 1; 
+        } 
+        obj.src = arr[curIndex]; 
+  } 
+ </script> 
+</head>
+<body>
+    <div class="containter">
+    	<div class="header">
+    	    <div class="header_1">
+    	    	<div class="header_1_1">
+    	    		<img src="images/li_bg.gif"/><span class="span1">设为首页</span>
+    	    		<img src="images/li_bg.gif"/><span class="span1">加入收藏</span>
+    	    		<img src="images/li_bg.gif"/><span>联系我们</span>
+    	    	</div>
+    	    </div>
+    	    <div class="header_2">
+    	        <img src="images/logo.jpg"/>
+    	        <div class="header_2_1">
+    	    	    <img src="images/tel.jpg"/>
+    	    	    <span class="span1">24小时服务热线：</span>
+    	    	    <span class="span2">123-456-789</span>
+    	    	</div>
+    	    </div>
+    	    <div class="header_3">
+    	    	<ul>
+    	    		<li class="li1"><a href="#">首页</a></li>
+    	    		<li class="li1"><a href="#">关于慕课</a></li>
+    	    		<li class="li1"><a href="#">新闻动态</a></li>
+    	    		<li class="li1"><a href="#">课程中心</a></li>
+    	    		<li class="li1"><a href="#">在线课程</a></li>
+    	    		<li class="li1"><a href="#">人才招聘</a></li>
+    	    		<li class="li2"><img src="images/4.jpg"/></li>
+    	    	</ul>
+    	    </div>
+    	</div>
+    	<div class="content">
+    		<div class="content_1">
+                <img id="image" src="images/ad1.jpg" width="1000" height="243" />
+            </div>
+    		<div class="content_2">
+    			<div class="content_2_1">
+    				<div class="content_2_1_1">
+    					<span class="span1">新闻中心</span>
+    					<span class="span2">MORE>></span>
+    				</div>
+                    <div class="content_2_1_2">
+                        <img src="images/news.jpg">
+                        <div>
+                            <p class="p1">520&nbsp;慕女神喊你来表白</p>
+                            <p class="p2">活动时间：5月20日-5月25日</p>
+                            <p class="p2">获奖公布时间：5月26日</p>
+                            <p class="p3">Learn More>></p>
+                        </div>
+                    </div>
+                    <ul class="clearFloat">
+                        <li><a href="#">【慕课访谈 用户篇】“有为屌丝在路上”</a><span>2014-06-1</span></li>
+                        <li><a href="#">【慕课访谈 用户篇】“有为屌丝在路上”</a><span>2014-06-1</span></li>
+                        <li><a href="#">【慕课访谈 用户篇】“有为屌丝在路上”</a><span>2014-06-1</span></li>
+                        <li><a href="#">【化茧成蝶】“美女程序员的蜕变史”</a><span>2014-06-1</span></li>
+                    </ul>
+    			</div>
+    			<div class="content_2_2">
+    				<div class="content_2_2_1">
+    					<span class="span1">课程中心</span>
+    					<span class="span2">MORE>></span>
+    				</div>
+                    <div class="content_2_2_2">
+                        <img src="images/news0.jpg"/>
+                        <div>
+                            <p class="p1">css圆角进化论</p>
+                            <p class="p2">css圆角的实现经历了三大发展阶段。背景图片实现法。css2+html模拟标签。css圆角属性。本案例进行详细分析，分析其中的优缺点。进行详细分析，分析其中的优缺点。</p>
+                        </div>S
+                    </div>
+                    <ul class="clearFloat">
+                        <li>PHP开发</li>
+                        <li>前端开发</li>
+                        <li>JAVA开发</li>
+                        <li>android开发</li>
+                    </ul>
+    			</div>
+    			<div class="content_2_3">
+    				<div class="content_2_3_1">
+    					<span class="span1">媒体聚焦</span>
+    					<span class="span2">MORE>></span>
+    				</div>
+                    <div class="content_2_3_2">
+                        <div>
+                             <video width="230" height="170" controls="controls">
+                             <source src="movie.ogg" type="video/ogg">
+                             <!-- <source src="movie.mp4" type="video/mp4"> -->
+                             </video>
+                        </div>
+                        <img src="images/app.jpg"/> 
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="footer">
+            <div class="footer_1">
+                <h1>关于</h1>
+                <p>品牌故事</p>
+                <p>联系我们</p>
+                <p>加入我们</p>
+                <p>版权声明</p>
+            </div>  
+            <div class="footer_1">
+                <h1>课程</h1>
+                <p>PHP开发</p>
+                <p>前端开发</p>
+                <p>JAVA开发</p>
+                <p>android开发</p>
+            </div>
+            <div class="footer_1">
+                <h1>留言</h1>
+                <p>新浪微博</p>
+                <p>腾讯微博</p>
+                <p>企业微信</p>
+                <p>QQ空间</p>
+            </div>
+            <div class="footer_1">
+                <h1>关注</h1>
+                <p>意见反馈</p>
+                <p>问题留言</p>
+                <p>媒体联络</p>
+                <p>在线客服</p>
+            </div>
+            <div class="footer_2">
+                <div class="footer_2_1"><img src="images/weixin.png"/><span>微信关注</span></div>
+                <div class="footer_2_2"><img src="images/qrcode.jpg"/></div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
